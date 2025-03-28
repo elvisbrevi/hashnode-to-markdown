@@ -1,7 +1,19 @@
 {
-  "name": "hashnode-to-markdown",
+  "name": "htom",
+  "version": "0.0.1",
+  "description": "Hashnode to Markdown",
+  "author": "Elvis Brevi",
+  "license": "MIT",
   "module": "index.ts",
   "type": "module",
+  "keywords": [
+    "hashnode",
+    "markdown",
+    "blog",
+    "export",
+    "export blog",
+    "export hashnode blog"
+  ],
   "devDependencies": {
     "@types/bun": "latest"
   },
