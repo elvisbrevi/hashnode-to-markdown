@@ -1,0 +1,18 @@
+# Source code
+app/
+src/
+
+# Development files
+.git/
+.gitignore
+tsconfig.json
+bun.lock
+node_modules/
+output/
+
+# Other
+.github/
+.vscode/
+.idea/
+.DS_Store
+*.log 

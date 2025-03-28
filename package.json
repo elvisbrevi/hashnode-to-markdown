@@ -1,10 +1,10 @@
 {
-  "name": "htom",
+  "name": "hashnode-md",
   "version": "0.0.1",
-  "description": "Hashnode to Markdown",
+  "description": "CLI tool to export Hashnode blog posts to Markdown format",
   "author": "Elvis Brevi",
   "license": "MIT",
-  "module": "index.ts",
+  "main": "dist/index.js",
   "type": "module",
   "keywords": [
     "hashnode",
@@ -12,19 +12,39 @@
     "blog",
     "export",
     "export blog",
-    "export hashnode blog"
+    "export hashnode blog",
+    "cli"
   ],
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
   },
   "bin": {
-    "htom": "./app/index.ts"
+    "hashnode-md": "./dist/index.js"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=14.16"
+  },
+  "scripts": {
+    "build": "bun build ./app/index.ts --outdir ./dist --target node",
+    "prepublishOnly": "bun run build",
+    "start": "bun run app/index.ts",
+    "postinstall": "mkdir -p output"
   },
   "dependencies": {
     "@inquirer/input": "^4.1.8",
     "@inquirer/select": "^4.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elvisbrevi/hashnode-to-markdown"
+  },
+  "bugs": {
+    "url": "https://github.com/elvisbrevi/hashnode-to-markdown/issues"
+  },
+  "homepage": "https://github.com/elvisbrevi/hashnode-to-markdown#readme"
 }
