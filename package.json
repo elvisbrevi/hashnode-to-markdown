@@ -1,6 +1,6 @@
 {
   "name": "hashnode-md",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "CLI tool to export Hashnode blog posts to Markdown format",
   "author": "Elvis Brevi",
   "license": "MIT",
